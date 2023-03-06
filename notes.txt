@@ -1,0 +1,17 @@
+Server is a machine or application capable of handling request and response 
+We are using apache tomcat to handle the request and response 
+
+Definations:
+
+1) Servlet is an interface which has all the life cycle methods of a servlet
+2) The child class of HttpServlet is also known as a servlet
+3) Servlet is a helping technology recived by the server . All servlet are child class of HttpServlet
+
+
+****Step to make a servlet*****
+1] Make a class
+2] Extend HttpServlet
+3] Make doGet and doPost methods
+4] Depending upon where the request is mapped write the code to make dynamic page in doGet or doPost
+ 	
+ 	NOTE: by default once a request is mapped always the doGet method is called
