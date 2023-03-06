@@ -14,4 +14,48 @@ Definations:
 3] Make doGet and doPost methods
 4] Depending upon where the request is mapped write the code to make dynamic page in doGet or doPost
  	
- 	NOTE: by default once a request is mapped always the doGet method is called
+ 	NOTE: by default once a request is mapped always the doGet method is called by server
+ 	
+------------------------------------------------------------------------------------------------------------------
+
+PrintWritter is a predefined class used to print any data on file or also webpages
+to print on web pages we create the object response.getWritter method
+
+To fetch information from input tag if form we call request.getParameter() method
+	NOTE: we pass the name of input Tag in the getParameter
+	
+	.getParameter will always return String object.
+	
+
+------------------------------------------------------------------------------------------------------------------
+
+Difference between doGet and doPost
+
+1] All information given by user in form is attached in url when form is submitted when doGet is called.
+   But When doPost is called information is not attached to url.
+
+2] doGet is usally called to get information from Servlet
+   doPost is usually used to send information form page to servlet
+
+3] doGet provides less security
+   doPost provides better security
+   
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

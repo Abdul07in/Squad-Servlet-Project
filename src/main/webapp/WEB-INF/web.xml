@@ -3,9 +3,9 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
-	
+
 	<display-name>ServletPrograms</display-name>
-	
+
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
@@ -24,7 +24,7 @@
 		<servlet-name>sFriend</servlet-name>
 		<url-pattern>/searchFriend</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>actors</servlet-name>
 		<servlet-class>com.controller.ServletEx2</servlet-class>
@@ -34,5 +34,25 @@
 		<servlet-name>actors</servlet-name>
 		<url-pattern>/sActors</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>school</servlet-name>
+		<servlet-class>com.controller.ServletEx3</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>school</servlet-name>
+		<url-pattern>/schoolDetails</url-pattern>
+	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>employee</servlet-name>
+		<servlet-class>com.controller.EmployeeRegister</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>employee</servlet-name>
+		<url-pattern>/EmployeeRegister</url-pattern>
+	</servlet-mapping>
+
 </web-app>
