@@ -40,7 +40,33 @@ Difference between doGet and doPost
 3] doGet provides less security
    doPost provides better security
    
-	 
+------------------------------------------------------------------------------------------------------------------
+
+Servlet Life Cycle
+
+At the beginning all the servlet Classes are loaded the an instance is created for each servlet
+In the next strp init method is called this is the first life cycle method of servlet
+This method was forst created in servlet interface this method creates the object of all the servlets which hav been loaded
+
+Simultaneously ServletRequest and ServletResponse opbject are created these objects are converted to
+HttpServletRequest and HttpServletResponse in the public service method
+
+After makin HttpServletRequest and HttpServletResponse object protected service method is called 
+
+The protected service method will then internally call the doGet() or doPOst() method depending upon which method 
+had been requested from the page
+
+Once the entire doGet / doPost is executed the HttpServletRequest and Response object are deleted
+
+At last whent the project is terminated the destroy method is called which deltes all the servlet objects
+
+NOTE: 
+
+init() is called only once in the entire life cycle at the very beginning
+
+service() is called everytime a new request is made from page
+
+destroy() is called only once at the end of the life cycle.
 
 
 
