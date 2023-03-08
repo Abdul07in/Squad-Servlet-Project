@@ -73,9 +73,13 @@ destroy() is called only once at the end of the life cycle.
 
 
 
+------------------------------------------------------------------------------------------------------------------
 
 
-
+1] response.sendRedirect () -> with this method we can go from one servlet to anpoter . we pass the webservlet annotation of
+	the second servlet int the send Redirect Method
+	This method will always send a new request 
+2] 
 
 
 
