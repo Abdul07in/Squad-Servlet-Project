@@ -29,7 +29,12 @@ public class DemoServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().print("<h3>Hello World</h3>");
+		response.getWriter().print("<h2>Hello World</h2>");
+		String institute = request.getParameter("institute");
+		String branch = request.getParameter("branch");
+
+		response.getWriter().print("<h3>Institute :" + institute + " </h3>");
+		response.getWriter().print("<h3>Branch :" + branch + " </h3>");
 	}
 
 	/**
