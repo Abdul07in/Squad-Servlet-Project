@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Login</title>
+<style type="text/css">
+table {
+	border: 2px solid;
+	border-radius: 4px;
+	border-spacing: 10px;
+	font-family: Dyuthi;
+	font-size: 15px;
+	background: cadetblue;
+	color: #333;
+	text-shadow: 1px 1px white;
+}
+</style>
+</head>
+<body>
+
+	<form action="LoginServlet" method="post">
+
+		<table align="left" boder="1">
+			<tr>
+				<th>Enter Username</th>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<th>Enter Password</th>
+				<td><input type="password" name="password"></td>
+			</tr>
+
+			<tr style="text-align: center">
+				<td><input type="reset" value="reset"></td>
+				<td><input type="submit" value="login"></td>
+			</tr>
+		</table>
+
+	</form>
+</body>
+</html>
