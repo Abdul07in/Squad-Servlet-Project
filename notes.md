@@ -110,6 +110,19 @@ destroy() is called only once at the end of the life cycle.
 	
 	a] forward() will be able to show output of only the second servlet.
 	include() will include the output of first servlet and second servlet on the same page
+	
+
+------------------------------------------------------------------------------------------------------------------
+
+SESSION MANAGEMENT
+
+
+1] Url Rewritting : 
+
+
+
+2] HttpSession : It can be used to store data This data will be available for the entire application
+
  
 
 
