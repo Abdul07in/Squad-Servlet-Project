@@ -1,16 +1,16 @@
-PWD = /home/luser/Ct43/abdul2/ServletPrograms
+## PWD = /home/luser/Ct43/abdul2/ServletPrograms
 
 Server is a machine or application capable of handling request and response 
 We are using apache tomcat to handle the request and response 
 
-Definations:
+##Definations:
 
 1) Servlet is an interface which has all the life cycle methods of a servlet
 2) The child class of HttpServlet is also known as a servlet
 3) Servlet is a helping technology recived by the server . All servlet are child class of HttpServlet
 
 
-****Step to make a servlet*****
+##Step to make a servlet
 1] Make a class
 2] Extend HttpServlet
 3] Make doGet and doPost methods
@@ -114,15 +114,20 @@ destroy() is called only once at the end of the life cycle.
 
 ------------------------------------------------------------------------------------------------------------------
 
-SESSION MANAGEMENT
+#SESSION MANAGEMENT
 
 
-1] Url Rewritting : 
+##1] Url Rewritting
+- We can continously maintain data by adding it on the url in name vale pair 
+    
+Eg: response.sendRedirect("Servlet2?student=Abdul");
+    In this example the data is added in name value pair where name is student and its value is Ashish.
 
+##2] HttpSession
 
-
-2] HttpSession : It can be used to store data This data will be available for the entire application
-
+- It can be used to store data This data will be available for the entire application until this session object is forcefully deleted.
+- All thru the application in any servlet if we make the session object by using request.getSession() then the Server will give the same session object
+- Hence if we once store any data in session object , then this same object is returned in all servlets and so the data is available for all servlet.
  
 
 
