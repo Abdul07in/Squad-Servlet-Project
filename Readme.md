@@ -84,12 +84,11 @@ destroy() is called only once at the end of the life cycle.
 	
 2] forward() and include() of RequestDispatcher
 
-	forward and include () s also used to move from one servlet to another With this we are sending the same req and
-	response object to the second servlet hence any data which the reques object recived from page will also be seen int
-	the second servlet
+- forward and include () s also used to move from one servlet to another With this we are sending the same req and response object to the second servlet hence any data which the reques object recived from page will also be seen int	the second servlet
+
 	
 	
-	Difference sendRedirect and for/inc
+### Difference sendRedirect and for/inc
 	
 	a] sendredirect uses a new request to go to the next servlet
 		forward/include uses the same request to go to next servlet
@@ -129,6 +128,16 @@ Eg: response.sendRedirect("Servlet2?student=Abdul");
 - All thru the application in any servlet if we make the session object by using request.getSession() then the Server will give the same session object
 - Hence if we once store any data in session object , then this same object is returned in all servlets and so the data is available for all servlet.
  
+
+## 3] Cookies
+
+- Cookies class object can also be used to store data when movind from one 
+
+
+
+
+
+
 
 
 
