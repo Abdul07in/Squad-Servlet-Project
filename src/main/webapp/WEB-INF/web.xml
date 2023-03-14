@@ -6,6 +6,11 @@
 
 	<display-name>ServletPrograms</display-name>
 
+	<context-param>
+		<param-name>Email</param-name>
+		<param-value>coder@gmail.com</param-value>
+	</context-param>
+
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
@@ -18,6 +23,12 @@
 	<servlet>
 		<servlet-name>sFriend</servlet-name>
 		<servlet-class>com.controller.ServletEx1</servlet-class>
+
+		<init-param>
+			<param-name>Coupon</param-name>
+			<param-value>100Off</param-value>
+		</init-param>
+
 	</servlet>
 
 	<servlet-mapping>
@@ -44,7 +55,7 @@
 		<servlet-name>school</servlet-name>
 		<url-pattern>/schoolDetails</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>employee</servlet-name>
 		<servlet-class>com.controller.EmployeeRegister</servlet-class>

@@ -116,25 +116,56 @@ destroy() is called only once at the end of the life cycle.
 # SESSION MANAGEMENT
 
 
-## 1] Url Rewritting
+### 1] Url Rewritting
 - We can continously maintain data by adding it on the url in name vale pair 
     
 Eg: response.sendRedirect("Servlet2?student=Abdul");
     In this example the data is added in name value pair where name is student and its value is Ashish.
 
-## 2] HttpSession
+### 2] HttpSession
 
 - It can be used to store data This data will be available for the entire application until this session object is forcefully deleted.
 - All thru the application in any servlet if we make the session object by using request.getSession() then the Server will give the same session object
 - Hence if we once store any data in session object , then this same object is returned in all servlets and so the data is available for all servlet.
  
 
-## 3] Cookies
+### 3] Cookies
 
-- Cookies class object can also be used to store data when movind from one 
+- Cookies class object can also be used to store data when moving from one servlet to another servlet or page.
+- Cookies are stored in browser memory hence we are giving the priorty to client and the client will be able to delete the cookies ar the browser end.
+- For this reason we do not use Cookies to store important data.
+- Session object is safer for storing important data because it is maintained at server end 
+
+### 4] Hidden Form
+
+- Hidden forn tags are used to maintain the data about the page.
+- Many a times we will reach the same doGet/doPost method from the page that we need to recognize the page from which the request has come and make the output accordingly
+- This is done very easily with the help of hidden tag just change the value page in which you are. 
 
 
+------------------------------------------------------------------------------------------------------------------
 
+## Data in XML File
+
+- We can store data in the XML file also
+- To store data which can be accessed by only one servlet we use <init-param> tag.
+- This tag is made inside the servlet tag.
+- This info will be seen by only the servlet whos servlet tag we have used.
+
+- In order to fetch data from init-param tage we use ServletConfig object.
+- ServletConfig object can be made by : getServletConfig() directly or by using init() which has ServletConfig object in its parameter
+
+
+- To store data which can be accessed by all servlet we use <context-param> tag
+- This tag is made directly in the web.xml file
+
+- In order to fetch data from the <context-param> tag we use ServeltContext Object.
+- ServletContext object can be made by :
+-- ServletContext context = getServletContext();
+-- ServletContext context = request.getServletContext();
+-- ServletContext context = session.getServletContext();
+
+- Both ServletConfig and ServletContext are interface and we are using their implemented objects in above example. 
 
 
 

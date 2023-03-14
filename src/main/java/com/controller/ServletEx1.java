@@ -3,6 +3,8 @@ package com.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -28,7 +30,14 @@ public class ServletEx1 extends HttpServlet{
 				+ "</ul>"
 				+ "");
 		
+		ServletConfig config = getServletConfig();
+		String coupon = config.getInitParameter("Coupon");
 		
+		ServletContext context = getServletContext();
+		String email = context.getInitParameter("Email");
+		
+		pw.println("<h2> Data for ServletEx1 Coupon = " + coupon + "</h2>");
+		pw.println("<h2> Data for All Servlet Email = " + email + "</h2>");
 		
 	}
 
