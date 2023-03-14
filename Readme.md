@@ -161,9 +161,9 @@ Eg: response.sendRedirect("Servlet2?student=Abdul");
 
 - In order to fetch data from the <context-param> tag we use ServeltContext Object.
 - ServletContext object can be made by :
--- ServletContext context = getServletContext();
--- ServletContext context = request.getServletContext();
--- ServletContext context = session.getServletContext();
+- a] ServletContext context = getServletContext();
+- b] ServletContext context = request.getServletContext();
+- c] ServletContext context = session.getServletContext();
 
 - Both ServletConfig and ServletContext are interface and we are using their implemented objects in above example. 
 
